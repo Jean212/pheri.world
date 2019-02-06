@@ -32,7 +32,7 @@ class App extends Component {
       <MainContainer id="main-page">
         {this.renderView()}
         <Header>
-          <NavBar/>
+          <NavBar />
         </Header>
       </MainContainer>
     )
