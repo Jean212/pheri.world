@@ -7,7 +7,8 @@ export default styled.ul`
   color: #FFF;
 
   @media only screen
-    and (min-width: 668px) {
+    and (min-width: 667px) 
+    and (orientation: landscape){
       .navNarrow {
         display: none;
       }
@@ -44,12 +45,10 @@ export default styled.ul`
     }
   
   @media only screen
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+  and (max-width: 667px) { 
     /* Mobile-Friendly Hamburger Menu*/
     .navWide {
-			display: none;
+      display: none;
     }
     
     .navNarrow {

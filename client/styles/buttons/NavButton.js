@@ -7,6 +7,13 @@ export default styled.div`
   
   a:hover, a:focus{
     color: pink;
+    cursor: pointer;
+  }
+
+  .navWide {
+    a:hover, a:focus{
+      color: black;
+    }
   }
 
   animation: drop-item-button 0.6s;

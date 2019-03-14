@@ -42,8 +42,8 @@ class NavBar extends Component {
     return (
       <Container>
         <div className="navWide">
-          <div><a>News</a></div>
-          <div><a>About</a></div>
+          <NavButton><a>News</a></NavButton>
+          <NavButton><a>About</a></NavButton>
           <div>
             <a>
               <img 
@@ -52,8 +52,8 @@ class NavBar extends Component {
               id="pheri-logo-nav"/>
             </a>
           </div>
-          <div><a>Contact</a></div>
-          <div><a>Links</a></div>
+          <NavButton><a>Contact</a></NavButton>
+          <NavButton><a>Links</a></NavButton>
         </div>
 
         {/* Narrow Nav */}
