@@ -5,6 +5,8 @@ export default styled.div`
   flex-direction: row;
   justify-content: center;
   
+  height: 20%;
+  
   margin: 0;
   top:0;
   left:0;

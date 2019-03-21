@@ -6,8 +6,10 @@ export default styled.div`
   }
   
   a:hover, a:focus{
-    color: pink;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: pink;
+    opacity: 0.95;
   }
 
   .navWide {

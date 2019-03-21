@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Home from './Home';
+import News from './News';
 
 // styled-components
 import MainContainer from '../styles/Main';
@@ -12,6 +13,7 @@ class App extends Component {
     this.state = {
       view: 'home'
     }
+    this.changeView = this.changeView.bind(this);
   }
   
 
@@ -24,6 +26,8 @@ class App extends Component {
   renderView() {
     if (this.state.view === 'home') {
       return <Home />
+    } else if (this.state.view === 'news') {
+      return <News />
     }
   }
 
@@ -32,7 +36,9 @@ class App extends Component {
       <MainContainer id="main-page">
         {this.renderView()}
         <Header>
-          <NavBar />
+          <NavBar 
+            changeView={this.changeView}
+          />
         </Header>
       </MainContainer>
     )

@@ -7,8 +7,7 @@ export default styled.ul`
   color: #FFF;
 
   @media only screen
-    and (min-width: 667px) 
-    and (orientation: landscape){
+    and (min-width: 667px) {
       .navNarrow {
         display: none;
       }
@@ -16,6 +15,15 @@ export default styled.ul`
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+
+        #pheri-logo-nav {
+          cursor: pointer;
+          :hover {
+            border-radius: 10px;
+            background-color: pink;
+            opacity: 0.95;
+          }
+        }
     
         list-style-type: none;
     
@@ -23,7 +31,8 @@ export default styled.ul`
           height: 100px;
         }
     
-        font-size: 60px;
+        font-size: 40px;
+        text-shadow: 2px 2px 3px #FFB6C1, 0 0 5px #FFF;
         margin-top: 1%;
     
         @media only screen and (max-width: 1400px) {
@@ -45,7 +54,8 @@ export default styled.ul`
     }
   
   @media only screen
-  and (max-width: 667px) { 
+  and (max-width: 790px) 
+  and (orientation: portrait) { 
     /* Mobile-Friendly Hamburger Menu*/
     .navWide {
       display: none;

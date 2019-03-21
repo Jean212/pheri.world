@@ -42,9 +42,13 @@ class NavBar extends Component {
     return (
       <Container>
         <div className="navWide">
-          <NavButton><a>News</a></NavButton>
+          <NavButton
+            onClick={()=> this.props.changeView('news')}
+          ><a>News</a></NavButton>
           <NavButton><a>About</a></NavButton>
-          <div>
+          <div
+            onClick={()=> this.props.changeView('home')}
+          >
             <a>
               <img 
               src="https://s3-us-west-1.amazonaws.com/pheriworld/graphics/PhEri-logover2+(2).png" 
