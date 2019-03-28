@@ -17,6 +17,8 @@ export default styled.ul`
         justify-content: space-around;
 
         #pheri-logo-nav {
+          height: 50px;
+          margin-top: -5px;
           cursor: pointer;
           :hover {
             border-radius: 10px;
@@ -26,21 +28,14 @@ export default styled.ul`
         }
     
         list-style-type: none;
-    
-        #pheri-logo-nav {
-          height: 100px;
-        }
-    
-        font-size: 40px;
+
+        font-size: 28px;
         text-shadow: 2px 2px 3px #FFB6C1, 0 0 5px #FFF;
-        margin-top: 1%;
     
         @media only screen and (max-width: 1400px) {
-          font-size: 36px;
+          font-size: 28px;
     
-          #pheri-logo-nav {
-            height: 60px;
-          }
+
         }
     
         @media only screen and (max-width: 900px) {

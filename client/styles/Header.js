@@ -4,8 +4,8 @@ export default styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
-  height: 20%;
+
+  height: 70px;
   
   margin: 0;
   top:0;

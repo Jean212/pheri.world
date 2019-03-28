@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  background-image: url('https://s3-us-west-1.amazonaws.com/pheriworld/bg/PhEri+(1).jpg');
+  background-image: url('https://s3-us-west-1.amazonaws.com/pheriworld/bg/PhEriFix+(1).jpg');
 
   /* Full height */
   height: 100vh; 

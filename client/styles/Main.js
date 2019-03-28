@@ -9,6 +9,10 @@ export default styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
+  .notHome {
+    background-color: pink;
+  }
+
   margin: 0;
   top:0;
   left:0;

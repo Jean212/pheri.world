@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.div`
-  background-color: #FFF;
+  background-color: #f9e8f9;
   height: 100vh; 
   margin: 0;
   top:0;
@@ -11,8 +11,17 @@ export default styled.div`
   position: fixed;
   pointer-events:none;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .transitionText {
+    color: #FFF;
+    font-size: 72px;
+  }
+
     
-  animation: bg-fade 0.6s;
+  animation: bg-fade 1.25s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;   

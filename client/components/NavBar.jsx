@@ -43,21 +43,36 @@ class NavBar extends Component {
       <Container>
         <div className="navWide">
           <NavButton
-            onClick={()=> this.props.changeView('news')}
+            onClick={()=> {
+              this.props.changeView('news', false)
+            }}
           ><a>News</a></NavButton>
-          <NavButton><a>About</a></NavButton>
+          <NavButton
+            onClick={()=> {
+              this.props.changeView('about', false)
+            }}
+          ><a>About</a></NavButton>
           <div
-            onClick={()=> this.props.changeView('home')}
+            onClick={()=> this.props.changeView('home', true)}
           >
             <a>
               <img 
               src="https://s3-us-west-1.amazonaws.com/pheriworld/graphics/PhEri-logover2+(2).png" 
               alt="PhEri Logo" 
-              id="pheri-logo-nav"/>
+              id="pheri-logo-nav"
+              ref="pheriLogo"/>
             </a>
           </div>
-          <NavButton><a>Contact</a></NavButton>
-          <NavButton><a>Links</a></NavButton>
+          <NavButton
+            onClick={()=> {
+              this.props.changeView('contact', false)
+            }}
+          ><a>Contact</a></NavButton>
+          <NavButton
+            onClick={()=> {
+              this.props.changeView('links', false)
+            }}
+          ><a>Links</a></NavButton>
         </div>
 
         {/* Narrow Nav */}
@@ -77,11 +92,36 @@ class NavBar extends Component {
             onClick={this.closeNav}>
               <a>x</a>
             </div>
-            <NavButton><a>Home</a></NavButton>
-            <NavButton><a>News</a></NavButton>
-            <NavButton><a>About</a></NavButton>
-            <NavButton><a>Contact</a></NavButton>
-            <NavButton><a>Links</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('home', true)
+                this.closeNav()
+              }}
+            ><a>Home</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('news', false)
+                this.closeNav();
+              }}
+            ><a>News</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('about', false)
+                this.closeNav();
+              }}
+            ><a>About</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('contact', false)
+                this.closeNav();
+              }}
+            ><a>Contact</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('links', false)
+                this.closeNav();
+              }}
+            ><a>Links</a></NavButton>
           </NavResponsive>
         </div>
       </Container>

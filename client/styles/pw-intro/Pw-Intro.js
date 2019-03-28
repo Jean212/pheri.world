@@ -18,6 +18,7 @@ export default styled.div`
       background-size: auto;
       background-attachment: unset;
       background-position: 0%;
+      text-shadow: 1px 1px 5px rgba(135,100,184 ,0.6);
 
       font-size: 160px;
       font-weight: bold;
