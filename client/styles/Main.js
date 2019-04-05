@@ -10,7 +10,7 @@ export default styled.div`
   background-size: cover;
 
   .notHome {
-    background-color: pink;
+    background-color: rgba(255, 192, 203);
   }
 
   margin: 0;

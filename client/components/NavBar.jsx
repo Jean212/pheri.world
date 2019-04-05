@@ -52,9 +52,14 @@ class NavBar extends Component {
               this.props.changeView('about', false)
             }}
           ><a>About</a></NavButton>
-          <div
-            onClick={()=> this.props.changeView('home', true)}
-          >
+          <NavButton
+            onClick={()=> {
+              this.props.changeView('music', false)
+            }}
+          ><a>Music</a></NavButton>
+          <NavButton
+              onClick={()=> this.props.changeView('home', true)}
+            >
             <a>
               <img 
               src="https://s3-us-west-1.amazonaws.com/pheriworld/graphics/PhEri-logover2+(2).png" 
@@ -62,12 +67,17 @@ class NavBar extends Component {
               id="pheri-logo-nav"
               ref="pheriLogo"/>
             </a>
-          </div>
+          </NavButton>
           <NavButton
             onClick={()=> {
               this.props.changeView('contact', false)
             }}
           ><a>Contact</a></NavButton>
+          <NavButton
+            onClick={()=> {
+              this.props.changeView('shop', false)
+            }}
+          ><a>Shop</a></NavButton>
           <NavButton
             onClick={()=> {
               this.props.changeView('links', false)
@@ -112,10 +122,22 @@ class NavBar extends Component {
             ><a>About</a></NavButton>
             <NavButton
               onClick={()=> {
+                this.props.changeView('music', false)
+                this.closeNav();
+              }}
+            ><a>Music</a></NavButton>
+            <NavButton
+              onClick={()=> {
                 this.props.changeView('contact', false)
                 this.closeNav();
               }}
             ><a>Contact</a></NavButton>
+            <NavButton
+              onClick={()=> {
+                this.props.changeView('shop', false)
+                this.closeNav();
+              }}
+            ><a>Shop</a></NavButton>
             <NavButton
               onClick={()=> {
                 this.props.changeView('links', false)

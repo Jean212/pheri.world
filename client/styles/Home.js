@@ -13,6 +13,7 @@ export default styled.div`
 
   /* Content */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 

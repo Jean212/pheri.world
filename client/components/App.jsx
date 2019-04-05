@@ -7,6 +7,8 @@ import News from './News';
 import About from './About';
 import Contact from './Contact';
 import Links from './Links';
+import Music from './Music';
+import Shop from './Shop';
 
 // styled-components
 import MainContainer from '../styles/Main';
@@ -46,14 +48,25 @@ class App extends Component {
       return <News 
         className="webPage"
         state={this.state}
+        changeView={this.changeView}
       />
     } else if (this.state.view === 'about') {
       return <About 
         className="webPage"
         state={this.state}
       />
+    } else if (this.state.view === 'music') {
+      return <Music 
+        className="webPage"
+        state={this.state}
+      />
     } else if (this.state.view === 'contact') {
       return <Contact 
+        className="webPage"
+        state={this.state}
+      />
+    } else if (this.state.view === 'shop') {
+      return <Shop 
         className="webPage"
         state={this.state}
       />

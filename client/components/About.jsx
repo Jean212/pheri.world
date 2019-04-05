@@ -3,6 +3,7 @@ import React from 'react';
 // styled-components
 import Container from '../styles/About';
 import WallFade from '../styles/animations/pageFade';
+import Footer from '../styles/Footer';
 
 const About = props => {
   return (
@@ -31,7 +32,9 @@ const About = props => {
           </p>
         </div>
       </div>
-      
+      <Footer>
+        <p>Copyright © 2018 PhEri | All Rights Reserved </p>
+      </Footer>
     </Container>
   )
 }

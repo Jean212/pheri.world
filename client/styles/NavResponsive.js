@@ -29,7 +29,7 @@ a {
   font-size: 72px;
   color: white;
   top: 0;
-  right: 7.5%;
+  right: 2%;
   margin-top: -5.5%;
   position: absolute;
 }

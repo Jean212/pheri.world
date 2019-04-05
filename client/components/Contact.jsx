@@ -3,6 +3,7 @@ import React from 'react';
 // styled-components
 import Container from '../styles/Contact';
 import WallFade from '../styles/animations/pageFade';
+import Footer from '../styles/Footer';
 
 const Contact = props => {
   return (
@@ -24,7 +25,6 @@ const Contact = props => {
           </strong>
         </div>
       </div>
-      
     </Container>
   )
 }

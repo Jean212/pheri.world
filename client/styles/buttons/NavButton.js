@@ -12,6 +12,10 @@ export default styled.div`
     opacity: 0.95;
   }
 
+  a:active { 
+    text-shadow: 1px 1px 5px rgba(135,100,184 ,0.75);
+  }
+
   .navWide {
     a:hover, a:focus{
       color: black;

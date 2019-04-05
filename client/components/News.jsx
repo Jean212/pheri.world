@@ -3,8 +3,7 @@ import React from 'react';
 // styled-components
 import Container from '../styles/News';
 import WallFade from '../styles/animations/pageFade';
-import NewsPost from '../styles/NewsPost';
-
+import Footer from '../styles/Footer';
 
 const News = props => {
   return (
@@ -12,23 +11,32 @@ const News = props => {
       <WallFade>
         <h1 className="transitionText">{props.state.view}</h1>
       </WallFade>      
-      <h1>Pheri News</h1>
+      <h1>PhEri News</h1>
       {/* manual feed update */}
-      <NewsPost>
-        <div className="news-info">
-          <h3>Pheri is performing at Ani-Fest 2019!</h3>        
+      <div className="constructionDiv">
+        <div className="constructionText">
+          <h2>Sorry... Under Construction!</h2>
         </div>
-        <img 
-          className="news-image"
-          src="https://s3-us-west-1.amazonaws.com/pheriworld/graphics/pherianifest.jpg" 
-          alt="pheri at anifest"
-        />
-        <div className="news-info">
-          
-          <a href="https://www.facebook.com/anifestival/photos/a.2016527401920728/2235375873369212/">Click here for more Info</a>
+        <div className="constructionImgDiv">
+          <img 
+            src="https://s3-us-west-1.amazonaws.com/pheriworld/graphics/construction/constructionpheri.png" 
+            alt="Construction Pheri"
+            className="constructionImg"
+            title="(C)2019 CHARAT"/>
         </div>
-      </NewsPost>
+        <div className="constructionText">
+          <p>
+            <strong
+              className="redirect"
+              onClick={()=>{props.changeView('links')}}
+            >Click here</strong> to follow us on our social media for more updates!
+          </p>
+        </div>
+      </div>
       
+      <Footer>
+        <p>Copyright © 2018 PhEri | All Rights Reserved</p>
+      </Footer>
     </Container>
   )
 }

@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export default styled.ul`
-  width: 80%;
+  * {margin: 0; padding: 0;}
+  padding-left: 0;
+
+  width: 100%;
 
   font-family: Marmelad;
   color: #FFF;
@@ -40,10 +43,6 @@ export default styled.ul`
     
         @media only screen and (max-width: 900px) {
           font-size: 28px;
-    
-          #pheri-logo-nav {
-            height: 60px;
-          }
         }  
       }
     }

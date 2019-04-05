@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export default styled.div`
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   background-color: #FFF;
 
   /* Full height */
@@ -29,9 +34,39 @@ export default styled.div`
 
   h1 {
     margin-top: 100px;
+    margin-bottom: 20px;
     font-family: Marmelad;
     color: #E0669B;
     text-shadow: 1px 1px 2px rgba(135,100,184 ,0.75);
+  }
+
+  #artistList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 2.5px;
+      padding: 5px;
+      border-radius: 10%;
+      background-color: #FAB9C9;
+      color: #FFF;
+      text-shadow: 1px 1px 2px rgba(135,100,184 ,0.75);
+      font-family: Marmelad;
+      font-size: 20px;
+      box-shadow: 1px 1px 2px rgba(135,100,184 ,0.75);
+
+      :hover{
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: pink;
+        opacity: 0.95;
+
+      :active { 
+        text-shadow: 1px 1px 5px rgba(135,100,184 ,0.75);
+        box-shadow: 1px 1px 5px rgba(135,100,184 ,0.75);
+      }
+    }
   }
 
   .aboutSection{
@@ -52,14 +87,12 @@ export default styled.div`
     font-family: Marmelad;
   }
   
+  .footerNone {
+    display: none;
+  }
   @media only screen
   and (max-width: 790px) 
   and (orientation: portrait) { 
-    .aboutChibiContainer {
-      img {
-        width: 50%;
-      }
-    }
   }
 
 
