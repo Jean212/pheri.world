@@ -21,7 +21,7 @@ const Links = props => {
 
             <div><strong>Latest News on PhEri on Facebook</strong></div>
             <div className="socialMediaButton fbButton">
-              <a href="http://fb.me/pheridol" 
+              <a href="https://fb.me/pheridol" 
               target="blank"
               >Facebook</a>
             </div>
@@ -29,11 +29,11 @@ const Links = props => {
             <div className="socialMediaButton ytButton">
               <a href="https://www.youtube.com/channel/UCEPSke4xQfETNcpMqdEeJDA" 
               target="blank"
-              >Facebook</a>
+              >YouTube</a>
             </div>
             <div><strong>@PhEri_Official on Instagram</strong></div>
             <div className="socialMediaButton igButton">
-              <a href="http://instagram.com/pheri_official" 
+              <a href="https://instagram.com/pheri_official/" 
               target="blank"
               >Instagram</a>
             </div>
@@ -45,7 +45,7 @@ const Links = props => {
             </div>
             <div><strong>PhEri Dust on Amazon Music</strong></div>
             <div className="socialMediaButton azButton">
-              <a href="https://www.amazon.com/dp/B07KWFNNHG/ref=cm_sw_r_tw_dp_U_x_HeVMCb1F1Z8Q1" 
+              <a href="https://www.amazon.com/dp/B07KWFNNHG" 
               target="blank"
               >Amazon Music</a>
             </div>
@@ -61,7 +61,7 @@ const Links = props => {
             </div>
             <div><strong>Feebeechanchibi on Facebook</strong></div>
             <div className="socialMediaButton fbButton">
-              <a href="http://fb.me/feebeechanchibi" 
+              <a href="https://fb.me/feebeechanchibi" 
               target="blank"
               >Facebook</a>
             </div>
@@ -89,7 +89,7 @@ const Links = props => {
             </div>
             <div><strong>@EriRin_PhEri's Twitter</strong></div>
             <div className="socialMediaButton twButton">
-              <a href="https://twitter.com/feebeechanchibi" 
+              <a href="https://twitter.com/EriRin_PhEri" 
               target="blank"
               >Twitter</a>
             </div>
@@ -100,7 +100,7 @@ const Links = props => {
       </div>
 
       <Footer>
-        <p>Copyright © 2018 PhEri | All Rights Reserved </p>
+        <p>Copyright © 2019 PhEri | All Rights Reserved </p>
       </Footer>
     </Container>
   )
